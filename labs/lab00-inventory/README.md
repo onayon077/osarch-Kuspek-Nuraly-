@@ -1,32 +1,37 @@
-# Lab 0 - Inventory your own machine
+# Lab 0 — Inventory your own machine
 
-Pair: Kuspek / [Фамилия напарника]
-Driver first half: Kuspek
-Machine: Host, Acer Nitro ANV15-41 (Windows 11 Pro)
+Author: Nuraly Kuspek (Solo)
+Machine: Laptop, Windows 11
 Date: 20.10.2026
 
 ## What I did
+1. Determined CPU model, physical core count, logical thread count, and verified hardware virtualization support via PowerShell CLI.
+2. Retrieved total RAM capacity, physical slot count, installed module count, and operational frequency.
+3. Identified storage drive model, bus/media type (NVMe SSD), and measured the actual free space on volume C:.
+4. Verified the system firmware interface (UEFI) along with BIOS version and release date.
+5. Exported raw CLI execution outputs into `evidence/cpu.txt`, `evidence/memory.txt`, and `evidence/disk.txt`.
 
-Собрал информацию о системе, используя PowerShell. Для записи результатов в файлы использовал операторы перенаправления вывода `>` (создание/перезапись) и `>>` (добавление в конец файла).
-
-## Result
+## Inventory
 
 | What | Value | Where I got it |
 | :--- | :--- | :--- |
-| **CPU** (Model, Cores, Threads) | *AMD Ryzen 5 7535HS, 6 Cores, 12 Threads* | `Get-CimInstance Win32_Processor` |
-| **Memory** (Total, Modules count, Speed) | *16 GB, 2 modules, 4800 MHz* | `Get-CimInstance Win32_PhysicalMemory` |
-| **Disk** (Model, Type, Free space on VM vol) | *WD PC SN740 NVMe SSD, SSD, 245 GB free* | `Get-PhysicalDisk` и `Get-Volume -DriveLetter C` |
-| **Firmware** (Type: BIOS/UEFI, Version, Date) | *UEFI, INSYDE Corp. V1.20, 23.10.2025* | `Get-CimInstance Win32_BIOS` |
-| **Virtualization** (Present and enabled?) | *Yes (True)* | `(Get-CimInstance Win32_ComputerSystem).HypervisorPresent` |
+| **CPU model** | AMD Ryzen 5 7535HS with Radeon Graphics | `Get-CimInstance Win32_Processor \| Select-Object Name` |
+| **CPU core count** | 6 | `Get-CimInstance Win32_Processor \| Select-Object NumberOfCores` |
+| **CPU thread count** | 12 | `Get-CimInstance Win32_Processor \| Select-Object NumberOfLogicalProcessors` |
+| **Total memory** | 16 GB (17,179,869,184 bytes) | `Get-CimInstance Win32_PhysicalMemory \| Select-Object Capacity` |
+| **Number of installed modules** | 1 module (DIMM 0) | `Get-CimInstance Win32_PhysicalMemory \| Select-Object DeviceLocator` |
+| **Memory speed** | 5600 MT/s | `Get-CimInstance Win32_PhysicalMemory \| Select-Object Speed` |
+| **Disk model** | KINGSTON OM8SEP4512Q-AA | `Get-PhysicalDisk \| Select-Object FriendlyName` |
+| **Disk type** | NVMe SSD | `Get-PhysicalDisk \| Select-Object MediaType, BusType` |
+| **Free space on volume C:** | ~148.89 GiB (159,869,906,944 bytes) | `Get-Volume \| Select-Object DriveLetter, SizeRemaining` |
+| **Firmware type** | UEFI | `$env:firmware_type` |
+| **Firmware version and date** | Version: V1.20, Date: 10/23/2025 | `Get-CimInstance Win32_BIOS \| Select-Object SMBIOSBIOSVersion, ReleaseDate` |
+| **Hardware virtualization** | Present and Enabled (True) | `Get-CimInstance Win32_Processor \| Select-Object VirtualizationFirmwareEnabled` |
+
+## Result
+All specifications were retrieved strictly from the command line without opening graphical system utilities. The host machine runs an AMD Ryzen 5 7535HS with 6 cores and 12 threads. Memory consists of a single 16 GB DDR5 module in slot DIMM 0 running at 5600 MT/s, confirming an open slot remains for future hardware upgrades. Storage is backed by a Kingston NVMe SSD with ~148.9 GB of free space on partition C:. Hardware virtualization is enabled at the firmware level, confirming system readiness for hypervisors.
 
 ## What did not work the first time
-
-What I saw: При сохранении информации о диске в файл `disk.txt` записался только размер свободного места, а данные о модели накопителя исчезли.
-What it turned out to be: Я случайно использовал оператор `>` во второй команде (`Get-Volume`), который полностью перезаписал файл вместо того, чтобы дополнить его.
-What I did: Я заменил `>` на `>>` во второй команде, чтобы новые строки корректно дописались в конец файла.
-
-## Evidence
-
-- [evidence/cpu.txt](evidence/cpu.txt) - вывод команды с характеристиками процессора (6 ядер, 12 потоков)
-- [evidence/memory.txt](evidence/memory.txt) - вывод с емкостью, скоростью и расположением модулей оперативной памяти
-- [evidence/disk.txt](evidence/disk.txt) - вывод с типом диска (NVMe SSD) и объемом свободного места
+- **What I saw:** Standard drive queries (`Get-Disk` or `Win32_DiskDrive`) returned total drive capacity rather than available free space. In addition, general OS memory commands reported total memory without revealing physical module count.
+- **What it turned out to be:** Disk capacity refers to the entire hardware drive, whereas free space belongs to a mounted logical volume. Similarly, logical system memory abstracts away the physical slot topology.
+- **What I
