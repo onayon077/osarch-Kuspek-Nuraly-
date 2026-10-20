@@ -34,4 +34,10 @@ All specifications were retrieved strictly from the command line without opening
 ## What did not work the first time
 - **What I saw:** Standard drive queries (`Get-Disk` or `Win32_DiskDrive`) returned total drive capacity rather than available free space. In addition, general OS memory commands reported total memory without revealing physical module count.
 - **What it turned out to be:** Disk capacity refers to the entire hardware drive, whereas free space belongs to a mounted logical volume. Similarly, logical system memory abstracts away the physical slot topology.
-- **What I
+- **What I did:** Switched to `Get-Volume` to specifically read `SizeRemaining` on drive C:, and queried `Win32_PhysicalMemory` directly to inspect physical DIMM slots and confirm single-channel configuration.
+
+## Evidence
+- [evidence/cpu.txt](evidence/cpu.txt) — Raw CLI output for CPU specifications and hardware virtualization status
+- [evidence/memory.txt](evidence/memory.txt) — Raw CLI output for physical RAM modules, capacity, and frequency
+- [evidence/disk.txt](evidence/disk.txt) — Raw CLI output for physical disk type, model, and volume free space
+
