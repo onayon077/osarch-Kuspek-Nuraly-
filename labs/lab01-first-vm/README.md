@@ -1,9 +1,9 @@
 # Lab 1 — Your first virtual machine
 
-**Pair:** Kuspek Nuraly (Solo)
-**Driver first half:** Kuspek Nuraly
-**Machine:** Laptop running Windows 11 (4 cores/8 threads, 16 GB RAM), guest Ubuntu 26.04.1 LTS
-**Date:** 24.10.2026
+**Pair:** Kuspek Nuraly (Solo)  
+**Driver first half:** Kuspek Nuraly  
+**Machine:** Laptop running Windows 11 (4 cores/8 threads, 16 GB RAM), guest Ubuntu 26.04.1 LTS  
+**Date:** 24.10.2026  
 
 ## What I did
 
@@ -27,7 +27,8 @@ During the initial setup and SSH forwarding configuration, duplicate file extens
 
 ## Evidence
 
+* [evidence/vm-settings.png](evidence/vm-settings.png) — CPU, memory and disk as configured
 * [evidence/port-forwarding.png](evidence/port-forwarding.png) — Port forwarding rule (Host 2222 to Guest 22)
 * [evidence/guest-release.txt](evidence/guest-release.txt) — Ubuntu 26.04.1 LTS is running in the guest
-* [evidence/broken.png](evidence/broken.png) — the guest in its broken state showing network failure
-* [evidence/snapshot-list.png](evidence/snapshot-list.png) — the snapshot list, after the rollback
+* [evidence/broken.png](evidence/broken.png) — the guest in its broken state showing the before/after network failure
+* [evidence/snapshot-list.png](evidence/snapshot-list.png) — the snapshot, after the rollback
