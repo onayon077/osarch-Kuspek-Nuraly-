@@ -1,24 +1,15 @@
-# Lab 1 — Your first virtual machine
-
-Pair:                     Driver first half:
-Machine:
-Date:
-
-## What I did
-
-Steps, with commands in code blocks. Not prose about the steps.
-
-```
-<command>
-<output, trimmed>
-```
-
-## Result
-
-## What did not work the first time
-
-At least one thing. What I saw, what it turned out to be, what I did about it.
-
+# Lab 01: First VM
+- **Студент:** Kuspek Nuraly
+- **Дата:** 2026-10-24
+- **Операционная система гостя:** Ubuntu 26.04.1 LTS
 ## Evidence
-
-- [evidence/](evidence/) — one line per file on what it proves
+### 1. Port Forwarding
+### 2. Guest Release Log
+```
+Distributor ID:	Ubuntu
+Description:	Ubuntu 26.04.1 LTS
+Release:	26.04
+Codename:	resolute
+```
+### 3. Broken State
+### 4. Snapshots List
