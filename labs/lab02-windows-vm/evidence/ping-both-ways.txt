@@ -1,0 +1,69 @@
+=== Ping Windows -> Ubuntu (10.0.2.3) ===
+
+Pinging 10.0.2.3 with 32 bytes of data:
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time<1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+
+Ping statistics for 10.0.2.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+=== 1. Windows -> Ubuntu (ping 10.0.2.3) ===
+Pinging 10.0.2.3 with 32 bytes of data:
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time<1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+
+Ping statistics for 10.0.2.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+=== 2. Ubuntu -> Windows (before firewall rule) ===
+nuralubuntu@Linux-Ubuntu:~$ ping -c 4 10.0.2.15
+PING 10.0.2.15 (10.0.2.15) 56(84) bytes of data.
+
+--- 10.0.2.15 ping statistics ---
+4 packets transmitted, 0 received, 100% packet loss, time 3142ms
+
+=== 3. Ubuntu -> Windows (after firewall rule) ===
+nuralubuntu@Linux-Ubuntu:~$ ping -c 4 10.0.2.15
+PING 10.0.2.15 (10.0.2.15) 56(84) bytes of data.
+64 bytes from 10.0.2.15: icmp_seq=1 ttl=128 time=0.674 ms
+64 bytes from 10.0.2.15: icmp_seq=2 ttl=128 time=1.09 ms
+64 bytes from 10.0.2.15: icmp_seq=3 ttl=128 time=1.21 ms
+64 bytes from 10.0.2.15: icmp_seq=4 ttl=128 time=1.22 ms
+
+--- 10.0.2.15 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3025ms
+rtt min/avg/max/mdev = 0.674/1.047/1.221/0.221 ms
+
+=== 4. Internet from Ubuntu ===
+nuralubuntu@Linux-Ubuntu:~$ ping -c 4 ubuntu.com
+PING ubuntu.com (185.125.190.21) 56(84) bytes of data.
+64 bytes from 185.125.190.21: icmp_seq=1 ttl=64 time=8878 ms
+64 bytes from 185.125.190.21: icmp_seq=2 ttl=64 time=7836 ms
+64 bytes from 185.125.190.21: icmp_seq=3 ttl=64 time=6787 ms
+64 bytes from 185.125.190.21: icmp_seq=4 ttl=64 time=8701 ms
+
+--- ubuntu.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3145ms
+rtt min/avg/max/mdev = 6787.231/8050.615/8878.408/829.190 ms, pipe 4
+
+=== 5. Internet from Windows ===
+PS C:\WINDOWS\system32> ping ubuntu.com
+
+Pinging ubuntu.com [185.125.190.21] with 32 bytes of data:
+Reply from 185.125.190.21: bytes=32 time=2265ms TTL=128
+Reply from 185.125.190.21: bytes=32 time=3286ms TTL=128
+Reply from 185.125.190.21: bytes=32 time=2746ms TTL=128
+Request timed out.
+
+Ping statistics for 185.125.190.21:
+    Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2265ms, Maximum = 3286ms, Average = 2765ms
