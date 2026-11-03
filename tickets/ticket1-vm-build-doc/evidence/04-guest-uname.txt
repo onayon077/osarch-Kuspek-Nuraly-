@@ -1,8 +1,15 @@
+nuralubuntu@Linux-Ubuntu:~$ ip -4 addr show enp0s3
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    altname enx08002770cb61
+    inet 10.0.2.3/24 metric 100 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 486sec preferred_lft 486sec
+
 nuralubuntu@Linux-Ubuntu:~$ uname -a
-Linux Linux-Ubuntu 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026 x86_64 GNU/Linux
+Linux Linux-Ubuntu 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Tue Nov 3 13:41:21 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+
 nuralubuntu@Linux-Ubuntu:~$ lsb_release -a
 No LSB modules are available.
-Distributor ID:	Ubuntu
-Description:	Ubuntu 26.04.1 LTS
-Release:	26.04
-Codename:	resolute
+Distributor ID: Ubuntu
+Description:    Ubuntu 26.04.1 LTS
+Release:        26.04
+Codename:       resolute
