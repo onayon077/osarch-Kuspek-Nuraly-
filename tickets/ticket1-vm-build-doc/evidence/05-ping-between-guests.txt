@@ -1,11 +1,39 @@
-nuralubuntu@Linux-Ubuntu:~$ ping -c 4 10.0.2.15
+=== 1. UBUNTU GUEST (IP: 10.0.2.3) -> WINDOWS GUEST (IP: 10.0.2.15) ===
+nuralubuntu@Linux-Ubuntu:~$ ip -4 addr show enp0s3 && ping -c 4 10.0.2.15
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    altname enx08002770cb61
+    inet 10.0.2.3/24 metric 100 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 486sec preferred_lft 486sec
 PING 10.0.2.15 (10.0.2.15) 56(84) bytes of data.
-64 bytes from 10.0.2.15: icmp_seq=1 ttl=128 time=0.932 ms
-64 bytes from 10.0.2.15: icmp_seq=2 ttl=128 time=1.35 ms
-64 bytes from 10.0.2.15: icmp_seq=3 ttl=128 time=1.40 ms
-64 bytes from 10.0.2.15: icmp_seq=4 ttl=128 time=1.07 ms
+64 bytes from 10.0.2.15: icmp_seq=1 ttl=128 time=3.97 ms
+64 bytes from 10.0.2.15: icmp_seq=2 ttl=128 time=1.53 ms
+64 bytes from 10.0.2.15: icmp_seq=3 ttl=128 time=1.38 ms
+64 bytes from 10.0.2.15: icmp_seq=4 ttl=128 time=1.58 ms
 
 --- 10.0.2.15 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3487ms
-rtt min/avg/max/mdev = 0.932/1.187/1.401/0.194 ms
-nuralubuntu@Linux-Ubuntu:~$
+4 packets transmitted, 4 received, 0% packet loss, time 3410ms
+rtt min/avg/max/mdev = 1.380/2.116/3.972/1.074 ms
+
+=== 2. WINDOWS GUEST (IP: 10.0.2.15) -> UBUNTU GUEST (IP: 10.0.2.3) ===
+PS C:\WINDOWS\system32> ipconfig; ping 10.0.2.3
+
+Windows IP Configuration
+
+Ethernet adapter Ethernet:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::b020:2986:ce30:dd06%7
+   IPv4 Address. . . . . . . . . . . : 10.0.2.15
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 10.0.2.1
+
+Pinging 10.0.2.3 with 32 bytes of data:
+Reply from 10.0.2.3: bytes=32 time=2ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+Reply from 10.0.2.3: bytes=32 time=1ms TTL=64
+
+Ping statistics for 10.0.2.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 1ms, Maximum = 2ms, Average = 1ms
