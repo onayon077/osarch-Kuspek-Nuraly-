@@ -1,9 +1,8 @@
-nuraly@ubuntu:~$ uname -a
-Linux Linux-Ubuntu 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC x86_64 x86_64 x86_64 GNU/Linux
-
-nuraly@ubuntu:~$ lsb_release -a
+nuralubuntu@Linux-Ubuntu:~$ uname -a
+Linux Linux-Ubuntu 7.0.0-38-generic #38-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep  4 09:10:14 UTC 2026 x86_64 GNU/Linux
+nuralubuntu@Linux-Ubuntu:~$ lsb_release -a
 No LSB modules are available.
-Distributor ID: Ubuntu
-Description:    Ubuntu 26.04.1 LTS
-Release:        26.04
-Codename:       noble
+Distributor ID:	Ubuntu
+Description:	Ubuntu 26.04.1 LTS
+Release:	26.04
+Codename:	resolute
