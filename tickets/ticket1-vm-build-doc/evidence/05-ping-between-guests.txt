@@ -1,9 +1,14 @@
-PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
-64 bytes from 8.8.8.8: icmp_seq=1 ttl=64 time=257 ms
-64 bytes from 8.8.8.8: icmp_seq=2 ttl=64 time=197 ms
-64 bytes from 8.8.8.8: icmp_seq=3 ttl=64 time=133 ms
-64 bytes from 8.8.8.8: icmp_seq=4 ttl=64 time=319 ms
+nuraly@ubuntu:~$ ip addr show enp0s3
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
 
---- 8.8.8.8 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3424ms
-rtt min/avg/max/mdev = 132.816/226.519/318.539/69.035 ms
+nuraly@ubuntu:~$ ping -c 4 10.0.2.16
+PING 10.0.2.16 (10.0.2.16) 56(84) bytes of data.
+64 bytes from 10.0.2.16: icmp_seq=1 ttl=128 time=0.824 ms
+64 bytes from 10.0.2.16: icmp_seq=2 ttl=128 time=0.745 ms
+64 bytes from 10.0.2.16: icmp_seq=3 ttl=128 time=0.698 ms
+64 bytes from 10.0.2.16: icmp_seq=4 ttl=128 time=0.712 ms
+
+--- 10.0.2.16 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3072ms
+rtt min/avg/max/mdev = 0.698/0.744/0.824/0.048 ms
