@@ -82,11 +82,11 @@ The Windows Task Manager screenshots show host memory usage before and after the
 
 **Before:**
 
-![Host memory before the VM workload](host-memory-before.png)
+![Host memory before the VM workload](./host-memory-before.png)
 
 **After:**
 
-![Host memory after the VM workload](host-memory-after.png)
+![Host memory after the VM workload](./host-memory-after.png)
 
 These screenshots record host RAM usage at two points in time. They demonstrate increased memory pressure during the workload; by themselves, they do not establish that the host ran out of memory or that paging occurred.
 
