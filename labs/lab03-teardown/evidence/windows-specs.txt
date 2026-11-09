@@ -1,0 +1,47 @@
+﻿COMMAND: Get-CimInstance Win32_Processor
+
+
+Name                      : AMD Ryzen 5 7535HS with Radeon Graphics        
+NumberOfCores             : 6
+NumberOfLogicalProcessors : 12
+MaxClockSpeed             : 3301
+
+
+
+
+COMMAND: Get-CimInstance Win32_PhysicalMemory
+
+
+DeviceLocator        : DIMM 0
+Capacity             : 17179869184
+Speed                : 5600
+ConfiguredClockSpeed : 4800
+SMBIOSMemoryType     : 34
+
+
+
+
+COMMAND: Get-PhysicalDisk
+
+
+FriendlyName : KINGSTON OM8SEP4512Q-AA
+MediaType    : SSD
+BusType      : NVMe
+Size         : 512110190592
+
+
+
+
+COMMAND: Get-Volume
+
+DriveLetter FileSystem         Size SizeRemaining
+----------- ----------         ---- -------------
+          D NTFS         7601123328    1037889536
+          C NTFS       502459789312   78748073984
+            NTFS          973074432      89260032
+            FAT32        1069547520    1031012352
+
+
+
+COMMAND: $env:PROCESSOR_ARCHITECTURE
+AMD64
