@@ -122,9 +122,11 @@ The six required files are in `evidence/`. Screenshots with settings are from Vi
 | [05-ping-between-guests.txt](evidence/05-ping-between-guests.txt) | Both directions of guest-to-guest ping and Windows/Ubuntu internet checks. **Ubuntu internet section was transcribed from a real screenshot, not an original unedited terminal export.** |
 | [06-snapshot-list.png](evidence/06-snapshot-list.png) | Ubuntu `clean-install` snapshot, with VM name visible; previous snapshots are retained. |
 
-notepad tickets/ticket1-vm-build-doc/README.md
+### Additional evidence
 
-**Evidence limitations:** Restoring a snapshot was not tested; the exact installed VirtualBox build was not captured; the staged wizard composite is not proof of the original VM creation; and the Ubuntu internet portion should ideally be replaced with the native, unedited `ubuntu-internet-proof.txt` before final grading. Links to optional additional screenshots must be checked against the actual GitHub folder before submission.
+- [Windows clean-install snapshot](evidence/windows-snapshot-list.png) — Shows the `clean-install` snapshot for the `lab02-windows` virtual machine, with its name visible.
+
+**Evidence limitations:** Restoring a snapshot was not tested; the exact installed VirtualBox build was not captured; the staged wizard composite is not proof of the original VM creation; and the Ubuntu internet portion of `05-ping-between-guests.txt` was transcribed from console screenshots rather than exported as an unedited terminal log. Additional Windows configuration screenshots were inspected during the work, but are not linked here because they were not added to the submitted `evidence/` folder.
 
 ## 5. What I would do differently
 
