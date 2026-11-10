@@ -1,3 +1,14 @@
+TICKET 1 — NETWORK CONNECTIVITY EVIDENCE
+
+Sections 1-2: preserved original text output from 05-ping-between-guests.txt.
+Section 3: Ubuntu internet output transcribed from the screenshot of
+"cat ubuntu-internet-proof.txt". The original native TXT was not available
+for this compilation; replace this section with that file before claiming
+fully unedited evidence. A previous Ubuntu 8.8.8.8 test lost 3/4 packets;
+the included repeat test succeeded.
+Section 4: preserved original output from windows-internet-proof.txt.
+The duplicate COMMAND label in Section 4 exists in the submitted source.
+
 === 1. UBUNTU GUEST (IP: 10.0.2.3) -> WINDOWS GUEST (IP: 10.0.2.15) ===
 nuralubuntu@Linux-Ubuntu:~$ ip -4 addr show enp0s3 && ping -c 4 10.0.2.15
 2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
@@ -37,3 +48,72 @@ Ping statistics for 10.0.2.3:
     Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
 Approximate round trip times in milli-seconds:
     Minimum = 1ms, Maximum = 2ms, Average = 1ms
+
+====================================================================
+=== 3. UBUNTU GUEST -> INTERNET (SCREENSHOT TRANSCRIPTION) ===
+====================================================================
+COMMAND: ping -c 4 google.com
+PING google.com (142.251.110.139) 56(84) bytes of data.
+64 bytes from bz-in-f139.1e100.net (142.251.110.139): icmp_seq=1 ttl=64 time=183 ms
+64 bytes from bz-in-f139.1e100.net (142.251.110.139): icmp_seq=2 ttl=64 time=188 ms
+64 bytes from bz-in-f139.1e100.net (142.251.110.139): icmp_seq=3 ttl=64 time=202 ms
+64 bytes from bz-in-f139.1e100.net (142.251.110.139): icmp_seq=4 ttl=64 time=217 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3767ms
+rtt min/avg/max/mdev = 183.191/197.589/217.237/13.184 ms
+
+COMMAND: ping -c 4 8.8.8.8 (repeat test)
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=64 time=165 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=64 time=125 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=64 time=112 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=64 time=130 ms
+
+--- 8.8.8.8 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 4366ms
+rtt min/avg/max/mdev = 112.331/132.956/164.643/19.411 ms
+
+====================================================================
+=== 4. WINDOWS GUEST -> INTERNET (NATIVE TXT OUTPUT) ===
+====================================================================
+COMMAND: ping -n 4 8.8.8.8
+
+Pinging 8.8.8.8 with 32 bytes of data:
+Reply from 8.8.8.8: bytes=32 time=133ms TTL=128
+Reply from 8.8.8.8: bytes=32 time=133ms TTL=128
+Reply from 8.8.8.8: bytes=32 time=128ms TTL=128
+Reply from 8.8.8.8: bytes=32 time=124ms TTL=128
+
+Ping statistics for 8.8.8.8:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 124ms, Maximum = 133ms, Average = 129ms
+COMMAND: ping -n 4 google.com
+COMMAND: ping -n 4 google.com
+
+Pinging google.com [64.233.162.101] with 32 bytes of data:
+Reply from 64.233.162.101: bytes=32 time=125ms TTL=128
+Reply from 64.233.162.101: bytes=32 time=122ms TTL=128
+Reply from 64.233.162.101: bytes=32 time=134ms TTL=128
+Reply from 64.233.162.101: bytes=32 time=143ms TTL=128
+
+Ping statistics for 64.233.162.101:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 122ms, Maximum = 143ms, Average = 131ms
+COMMAND: nslookup google.com
+Server:  dns.google
+Address:  8.8.8.8
+
+Name:    google.com
+Addresses:  2a00:1450:4010:c05::64
+	  2a00:1450:4010:c05::71
+	  2a00:1450:4010:c05::66
+	  2a00:1450:4010:c05::8b
+	  64.233.162.138
+	  64.233.162.113
+	  64.233.162.101
+	  64.233.162.102
+	  64.233.162.100
+	  64.233.162.139
