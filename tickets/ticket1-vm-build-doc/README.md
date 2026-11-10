@@ -122,13 +122,7 @@ The six required files are in `evidence/`. Screenshots with settings are from Vi
 | [05-ping-between-guests.txt](evidence/05-ping-between-guests.txt) | Both directions of guest-to-guest ping and Windows/Ubuntu internet checks. **Ubuntu internet section was transcribed from a real screenshot, not an original unedited terminal export.** |
 | [06-snapshot-list.png](evidence/06-snapshot-list.png) | Ubuntu `clean-install` snapshot, with VM name visible; previous snapshots are retained. |
 
-Additional screenshots from the same real configuration, if saved alongside the six required files:
-
-- [windows-network-adapter.png](evidence/windows-network-adapter.png) — Windows on the same NAT Network.
-- [windows-system-settings.png](evidence/windows-system-settings.png) — Windows RAM, UEFI, TPM 2.0 and Secure Boot.
-- [windows-disk-settings.png](evidence/windows-disk-settings.png) — actual fixed 64 GB Windows VDI.
-- [windows-snapshot-list.png](evidence/windows-snapshot-list.png) — Windows `clean-install` snapshot with its VM name.
-- [windows-dns-fixed.png](evidence/windows-dns-fixed.png) — successful DNS/ping check following the Windows DNS fix.
+notepad tickets/ticket1-vm-build-doc/README.md
 
 **Evidence limitations:** Restoring a snapshot was not tested; the exact installed VirtualBox build was not captured; the staged wizard composite is not proof of the original VM creation; and the Ubuntu internet portion should ideally be replaced with the native, unedited `ubuntu-internet-proof.txt` before final grading. Links to optional additional screenshots must be checked against the actual GitHub folder before submission.
 
