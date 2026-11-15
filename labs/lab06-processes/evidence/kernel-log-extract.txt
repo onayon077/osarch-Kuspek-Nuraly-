@@ -1,0 +1,681 @@
+Nov 15 15:36:11 Linux-Ubuntu kernel: FS:  00007905b5f00b00 GS:  0000000000000000
+Nov 15 15:36:11 Linux-Ubuntu kernel: clocksource: Long readout interval, skipping watchdog check: cs_nsec: 182377971521 wd_nsec: 182377915867
+Nov 15 15:41:31 Linux-Ubuntu kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 19 times, consider switching to WQ_UNBOUND
+Nov 15 15:42:59 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:42:59 Linux-Ubuntu kernel: CPU: 3 UID: 1000 PID: 2229 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:42:59 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:42:59 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:42:59 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:42:59 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:42:59 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:42:59 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:42:59 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:42:59 Linux-Ubuntu kernel: [   2228]  1000  2228   244582   116867   116730      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:42:59 Linux-Ubuntu kernel: [   2229]  1000  2229   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:42:59 Linux-Ubuntu kernel: [   2232]  1000  2232     4028      981      306      675         0    81920        0             0 sleep
+Nov 15 15:42:59 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2229,uid=1000
+Nov 15 15:42:59 Linux-Ubuntu kernel: Out of memory: Killed process 2229 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:42:59 Linux-Ubuntu kernel: chronyd invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0
+Nov 15 15:43:00 Linux-Ubuntu kernel: CPU: 0 UID: 989 PID: 1211 Comm: chronyd Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:00 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:00 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:00 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:00 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:00 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:00 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:00 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:00 Linux-Ubuntu kernel: [   2228]  1000  2228   244582   187891   187754      130         7  1597440        0          1000 stress-ng-vm
+Nov 15 15:43:00 Linux-Ubuntu kernel: [   2232]  1000  2232     4028      981      306      675         0    81920        0             0 sleep
+Nov 15 15:43:00 Linux-Ubuntu kernel: [   2234]  1000  2234   244582   162499   162362      130         7  1396736        0          1000 stress-ng-vm
+Nov 15 15:43:00 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2228,uid=1000
+Nov 15 15:43:00 Linux-Ubuntu kernel: Out of memory: Killed process 2228 (stress-ng-vm) total-vm:978328kB, anon-rss:751016kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1560kB oom_score_adj:1000
+Nov 15 15:43:00 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:00 Linux-Ubuntu kernel: CPU: 4 UID: 1000 PID: 2235 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:00 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:00 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:00 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:00 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:00 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:00 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:00 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:00 Linux-Ubuntu kernel: [   2232]  1000  2232     4028      981      306      675         0    81920        0             0 sleep
+Nov 15 15:43:00 Linux-Ubuntu kernel: [   2234]  1000  2234   244582   233540   233399      133         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:00 Linux-Ubuntu kernel: [   2235]  1000  2235   244582   114820   114680      133         7  1015808        0          1000 stress-ng-vm
+Nov 15 15:43:00 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2234,uid=1000
+Nov 15 15:43:00 Linux-Ubuntu kernel: Out of memory: Killed process 2234 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:532kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:01 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:01 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2236 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:01 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:01 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:01 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:01 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:01 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:01 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:01 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:01 Linux-Ubuntu kernel: [   2232]  1000  2232     4028      981      306      675         0    81920        0             0 sleep
+Nov 15 15:43:01 Linux-Ubuntu kernel: [   2235]  1000  2235   244582   179489   179352      130         7  1531904        0          1000 stress-ng-vm
+Nov 15 15:43:01 Linux-Ubuntu kernel: [   2236]  1000  2236   244582   170898   170761      130         7  1462272        0          1000 stress-ng-vm
+Nov 15 15:43:01 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2235,uid=1000
+Nov 15 15:43:01 Linux-Ubuntu kernel: Out of memory: Killed process 2235 (stress-ng-vm) total-vm:978328kB, anon-rss:717408kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1496kB oom_score_adj:1000
+Nov 15 15:43:01 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:01 Linux-Ubuntu kernel: CPU: 0 UID: 1000 PID: 2237 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:01 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:01 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:01 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:01 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:01 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:01 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:01 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:01 Linux-Ubuntu kernel: [   2232]  1000  2232     4028      981      306      675         0    81920        0             0 sleep
+Nov 15 15:43:01 Linux-Ubuntu kernel: [   2236]  1000  2236   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:01 Linux-Ubuntu kernel: [   2237]  1000  2237   244582   116800   116663      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:01 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2236,uid=1000
+Nov 15 15:43:01 Linux-Ubuntu kernel: Out of memory: Killed process 2236 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:01 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:02 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2237 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:02 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:02 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:02 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:02 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:02 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:02 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:02 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2232]  1000  2232     4028      981      306      675         0    81920        0             0 sleep
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2237]  1000  2237   244582   175169   175032      130         7  1499136        0          1000 stress-ng-vm
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2238]  1000  2238   244582   175171   175034      130         7  1499136        0          1000 stress-ng-vm
+Nov 15 15:43:02 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2238,uid=1000
+Nov 15 15:43:02 Linux-Ubuntu kernel: Out of memory: Killed process 2238 (stress-ng-vm) total-vm:978328kB, anon-rss:700136kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1464kB oom_score_adj:1000
+Nov 15 15:43:02 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:02 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2237 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:02 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:02 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:02 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:02 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:02 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:02 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:02 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2237]  1000  2237   244582   230875   230738      130         7  1941504        0          1000 stress-ng-vm
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2239]  1000  2239   244582   119758   119621      130         7  1052672        0          1000 stress-ng-vm
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2240]  1000  2240     3999      345       32      313         0    53248        0             0 date
+Nov 15 15:43:02 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2237,uid=1000
+Nov 15 15:43:02 Linux-Ubuntu kernel: Out of memory: Killed process 2237 (stress-ng-vm) total-vm:978328kB, anon-rss:922952kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1896kB oom_score_adj:1000
+Nov 15 15:43:02 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:02 Linux-Ubuntu kernel: CPU: 3 UID: 1000 PID: 2242 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:02 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:02 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:02 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:02 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:02 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:02 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:02 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2239]  1000  2239   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2242]  1000  2242   244582   116800   116663      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:02 Linux-Ubuntu kernel: [   2243]  1000  2243     4028      964      306      658         0    73728        0             0 sleep
+Nov 15 15:43:02 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2239,uid=1000
+Nov 15 15:43:02 Linux-Ubuntu kernel: Out of memory: Killed process 2239 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:03 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:03 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2244 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:03 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:03 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:03 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:03 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:03 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:03 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:03 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:03 Linux-Ubuntu kernel: [   2242]  1000  2242   244582   194932   194795      130         7  1654784        0          1000 stress-ng-vm
+Nov 15 15:43:03 Linux-Ubuntu kernel: [   2243]  1000  2243     4028      964      306      658         0    73728        0             0 sleep
+Nov 15 15:43:03 Linux-Ubuntu kernel: [   2244]  1000  2244   244582   155405   155266      132         7  1339392        0          1000 stress-ng-vm
+Nov 15 15:43:03 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2242,uid=1000
+Nov 15 15:43:03 Linux-Ubuntu kernel: Out of memory: Killed process 2242 (stress-ng-vm) total-vm:978328kB, anon-rss:779180kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1616kB oom_score_adj:1000
+Nov 15 15:43:03 Linux-Ubuntu kernel: systemd-journal invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=-250
+Nov 15 15:43:03 Linux-Ubuntu kernel: CPU: 4 UID: 0 PID: 470 Comm: systemd-journal Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:03 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:03 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:03 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:03 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:03 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:03 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:03 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:03 Linux-Ubuntu kernel: [   2243]  1000  2243     4028      964      306      658         0    73728        0             0 sleep
+Nov 15 15:43:03 Linux-Ubuntu kernel: [   2244]  1000  2244   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:03 Linux-Ubuntu kernel: [   2245]  1000  2245   244582   116796   116659      130         7  1028096        0          1000 stress-ng-vm
+Nov 15 15:43:03 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2244,uid=1000
+Nov 15 15:43:03 Linux-Ubuntu kernel: Out of memory: Killed process 2244 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:04 Linux-Ubuntu kernel: Out of memory: Killed process 2245 (stress-ng-vm) total-vm:978328kB, anon-rss:727844kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1516kB oom_score_adj:1000
+Nov 15 15:43:04 Linux-Ubuntu kernel: oom_kill_process: 1 callbacks suppressed
+Nov 15 15:43:04 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:04 Linux-Ubuntu kernel: CPU: 3 UID: 1000 PID: 2247 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:04 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:04 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:04 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:04 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:04 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:04 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:04 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:04 Linux-Ubuntu kernel: [   2243]  1000  2243     4028      964      306      658         0    73728        0             0 sleep
+Nov 15 15:43:04 Linux-Ubuntu kernel: [   2246]  1000  2246   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:04 Linux-Ubuntu kernel: [   2247]  1000  2247   244582   116864   116727      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:04 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2246,uid=1000
+Nov 15 15:43:04 Linux-Ubuntu kernel: Out of memory: Killed process 2246 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:04 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:04 Linux-Ubuntu kernel: CPU: 3 UID: 1000 PID: 2247 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:04 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:04 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:04 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:04 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:04 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:04 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:04 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:04 Linux-Ubuntu kernel: [   2243]  1000  2243     4028      964      306      658         0    73728        0             0 sleep
+Nov 15 15:43:04 Linux-Ubuntu kernel: [   2247]  1000  2247   244582   193862   193725      130         7  1646592        0          1000 stress-ng-vm
+Nov 15 15:43:04 Linux-Ubuntu kernel: [   2249]  1000  2249   244582   156477   156340      130         7  1347584        0          1000 stress-ng-vm
+Nov 15 15:43:04 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2247,uid=1000
+Nov 15 15:43:04 Linux-Ubuntu kernel: Out of memory: Killed process 2247 (stress-ng-vm) total-vm:978328kB, anon-rss:774900kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1608kB oom_score_adj:1000
+Nov 15 15:43:04 Linux-Ubuntu kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 35 times, consider switching to WQ_UNBOUND
+Nov 15 15:43:05 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:05 Linux-Ubuntu kernel: CPU: 3 UID: 1000 PID: 2250 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:05 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:05 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:05 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:05 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:05 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:05 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:05 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:05 Linux-Ubuntu kernel: [   2243]  1000  2243     4028      964      306      658         0    73728        0             0 sleep
+Nov 15 15:43:05 Linux-Ubuntu kernel: [   2249]  1000  2249   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:05 Linux-Ubuntu kernel: [   2250]  1000  2250   244582   116800   116663      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:05 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2249,uid=1000
+Nov 15 15:43:05 Linux-Ubuntu kernel: Out of memory: Killed process 2249 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:06 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:06 Linux-Ubuntu kernel: CPU: 1 UID: 1000 PID: 2251 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:06 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:06 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:06 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:06 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:06 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:06 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:06 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:06 Linux-Ubuntu kernel: [   2243]  1000  2243     4028      964      306      658         0    73728        0             0 sleep
+Nov 15 15:43:06 Linux-Ubuntu kernel: [   2250]  1000  2250   244582   195209   195072      130         7  1658880        0          1000 stress-ng-vm
+Nov 15 15:43:06 Linux-Ubuntu kernel: [   2251]  1000  2251   244582   155107   154970      130         7  1335296        0          1000 stress-ng-vm
+Nov 15 15:43:06 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2250,uid=1000
+Nov 15 15:43:06 Linux-Ubuntu kernel: Out of memory: Killed process 2250 (stress-ng-vm) total-vm:978328kB, anon-rss:780288kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1620kB oom_score_adj:1000
+Nov 15 15:43:07 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:07 Linux-Ubuntu kernel: CPU: 4 UID: 1000 PID: 2253 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:07 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:07 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:07 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:07 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:07 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:07 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:07 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:07 Linux-Ubuntu kernel: [   2251]  1000  2251   244582   116804   116666      130         8  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:07 Linux-Ubuntu kernel: [   2253]  1000  2253   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:07 Linux-Ubuntu kernel: [   2255]  1000  2255     4028      970      306      664         0    81920        0             0 sleep
+Nov 15 15:43:07 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2253,uid=1000
+Nov 15 15:43:07 Linux-Ubuntu kernel: Out of memory: Killed process 2253 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:07 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:08 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2251 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:08 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:08 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:08 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:08 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:08 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:08 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:08 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:08 Linux-Ubuntu kernel: [   2251]  1000  2251   244582   229410   229272      130         8  1929216        0          1000 stress-ng-vm
+Nov 15 15:43:08 Linux-Ubuntu kernel: [   2255]  1000  2255     4028      970      306      664         0    81920        0             0 sleep
+Nov 15 15:43:08 Linux-Ubuntu kernel: [   2256]  1000  2256   244582   120960   120823      130         7  1064960        0          1000 stress-ng-vm
+Nov 15 15:43:08 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2251,uid=1000
+Nov 15 15:43:08 Linux-Ubuntu kernel: Out of memory: Killed process 2251 (stress-ng-vm) total-vm:978328kB, anon-rss:917088kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1884kB oom_score_adj:1000
+Nov 15 15:43:08 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:08 Linux-Ubuntu kernel: CPU: 0 UID: 1000 PID: 2258 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:08 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:08 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:08 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:08 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:08 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:08 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:08 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:08 Linux-Ubuntu kernel: [   2255]  1000  2255     4028      970      306      664         0    81920        0             0 sleep
+Nov 15 15:43:08 Linux-Ubuntu kernel: [   2256]  1000  2256   244582   213058   212921      130         7  1802240        0          1000 stress-ng-vm
+Nov 15 15:43:08 Linux-Ubuntu kernel: [   2258]  1000  2258   244582   137280   137143      130         7  1196032        0          1000 stress-ng-vm
+Nov 15 15:43:08 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2256,uid=1000
+Nov 15 15:43:08 Linux-Ubuntu kernel: Out of memory: Killed process 2256 (stress-ng-vm) total-vm:978328kB, anon-rss:851684kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1760kB oom_score_adj:1000
+Nov 15 15:43:08 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:09 Linux-Ubuntu kernel: CPU: 3 UID: 1000 PID: 2259 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:09 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:09 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:09 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:09 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:09 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:09 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:09 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:09 Linux-Ubuntu kernel: [   2255]  1000  2255     4028      970      306      664         0    81920        0             0 sleep
+Nov 15 15:43:09 Linux-Ubuntu kernel: [   2258]  1000  2258   244582   233539   233399      132         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:09 Linux-Ubuntu kernel: [   2259]  1000  2259   244582   116803   116664      132         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:09 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2258,uid=1000
+Nov 15 15:43:09 Linux-Ubuntu kernel: Out of memory: Killed process 2258 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:528kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:09 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:09 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2260 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:09 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:09 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:09 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:09 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:09 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:09 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:09 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:09 Linux-Ubuntu kernel: [   2255]  1000  2255     4028      970      306      664         0    81920        0             0 sleep
+Nov 15 15:43:09 Linux-Ubuntu kernel: [   2259]  1000  2259   244582   199856   199719      130         7  1695744        0          1000 stress-ng-vm
+Nov 15 15:43:09 Linux-Ubuntu kernel: [   2260]  1000  2260   244582   150274   150137      130         7  1298432        0          1000 stress-ng-vm
+Nov 15 15:43:09 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2259,uid=1000
+Nov 15 15:43:09 Linux-Ubuntu kernel: Out of memory: Killed process 2259 (stress-ng-vm) total-vm:978328kB, anon-rss:798876kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1656kB oom_score_adj:1000
+Nov 15 15:43:09 Linux-Ubuntu kernel: hrtimer: interrupt took 3266695 ns
+Nov 15 15:43:10 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:10 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2261 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:10 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:10 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:10 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:10 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:10 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:10 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:10 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:10 Linux-Ubuntu kernel: [   2260]  1000  2260   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:10 Linux-Ubuntu kernel: [   2261]  1000  2261   244582   116866   116729      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:10 Linux-Ubuntu kernel: [   2262]  1000  2262     4028      926      278      648         0    73728        0             0 date
+Nov 15 15:43:10 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2260,uid=1000
+Nov 15 15:43:10 Linux-Ubuntu kernel: Out of memory: Killed process 2260 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:10 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:10 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2261 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:10 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:10 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:10 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:10 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:10 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:10 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:10 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:10 Linux-Ubuntu kernel: [   2261]  1000  2261   244582   196435   196298      130         7  1667072        0          1000 stress-ng-vm
+Nov 15 15:43:10 Linux-Ubuntu kernel: [   2263]  1000  2263   244582   153917   153780      130         7  1327104        0          1000 stress-ng-vm
+Nov 15 15:43:10 Linux-Ubuntu kernel: [   2265]  1000  2265     4025      863      278      585         0    69632        0             0 sleep
+Nov 15 15:43:10 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2261,uid=1000
+Nov 15 15:43:10 Linux-Ubuntu kernel: Out of memory: Killed process 2261 (stress-ng-vm) total-vm:978328kB, anon-rss:785192kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1628kB oom_score_adj:1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: CPU: 1 UID: 1000 PID: 2263 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:11 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:11 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:11 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:11 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:11 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:11 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:11 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2263]  1000  2263   244582   233539   233399      132         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2265]  1000  2265     4028      987      306      681         0    77824        0             0 sleep
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2266]  1000  2266   244582   116804   116665      132         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:11 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2263,uid=1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: Out of memory: Killed process 2263 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:528kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: CPU: 4 UID: 1000 PID: 2266 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:11 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:11 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:11 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:11 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:11 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:11 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:11 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2265]  1000  2265     4028      987      306      681         0    77824        0             0 sleep
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2266]  1000  2266   244582   196487   196350      130         7  1667072        0          1000 stress-ng-vm
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2268]  1000  2268   244582   153864   153727      130         7  1327104        0          1000 stress-ng-vm
+Nov 15 15:43:11 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2266,uid=1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: Out of memory: Killed process 2266 (stress-ng-vm) total-vm:978328kB, anon-rss:785400kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1628kB oom_score_adj:1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: CPU: 0 UID: 1000 PID: 2269 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:11 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:11 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:11 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:11 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:11 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:11 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:11 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2265]  1000  2265     4028      987      306      681         0    77824        0             0 sleep
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2268]  1000  2268   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:11 Linux-Ubuntu kernel: [   2269]  1000  2269   244582   116800   116663      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:11 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2268,uid=1000
+Nov 15 15:43:11 Linux-Ubuntu kernel: Out of memory: Killed process 2268 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:12 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:12 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2270 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:12 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:12 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:12 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:12 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:12 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:12 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:12 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:12 Linux-Ubuntu kernel: [   2265]  1000  2265     4028      987      306      681         0    77824        0             0 sleep
+Nov 15 15:43:12 Linux-Ubuntu kernel: [   2269]  1000  2269   244582   191282   191145      130         7  1626112        0          1000 stress-ng-vm
+Nov 15 15:43:12 Linux-Ubuntu kernel: [   2270]  1000  2270   244582   159082   158945      130         7  1368064        0          1000 stress-ng-vm
+Nov 15 15:43:12 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2269,uid=1000
+Nov 15 15:43:12 Linux-Ubuntu kernel: Out of memory: Killed process 2269 (stress-ng-vm) total-vm:978328kB, anon-rss:764580kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1588kB oom_score_adj:1000
+Nov 15 15:43:12 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:12 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2270 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:12 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:12 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:12 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:12 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:12 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:12 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:12 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:12 Linux-Ubuntu kernel: [   2265]  1000  2265     4028      987      306      681         0    77824        0             0 sleep
+Nov 15 15:43:12 Linux-Ubuntu kernel: [   2270]  1000  2270   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:12 Linux-Ubuntu kernel: [   2271]  1000  2271   244582   116805   116668      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:12 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2270,uid=1000
+Nov 15 15:43:12 Linux-Ubuntu kernel: Out of memory: Killed process 2270 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:13 Linux-Ubuntu kernel: gmain invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=0
+Nov 15 15:43:13 Linux-Ubuntu kernel: CPU: 2 UID: 0 PID: 1181 Comm: gmain Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:13 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:13 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:13 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:13 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:13 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:13 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:13 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:13 Linux-Ubuntu kernel: [   2265]  1000  2265     4028      987      306      681         0    77824        0             0 sleep
+Nov 15 15:43:13 Linux-Ubuntu kernel: [   2271]  1000  2271   244582   193569   193432      130         7  1642496        0          1000 stress-ng-vm
+Nov 15 15:43:13 Linux-Ubuntu kernel: [   2272]  1000  2272   244582   156778   156641      130         7  1351680        0          1000 stress-ng-vm
+Nov 15 15:43:13 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2271,uid=1000
+Nov 15 15:43:13 Linux-Ubuntu kernel: Out of memory: Killed process 2271 (stress-ng-vm) total-vm:978328kB, anon-rss:773728kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1604kB oom_score_adj:1000
+Nov 15 15:43:13 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:13 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2273 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:13 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:13 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:13 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:13 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:13 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:13 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:13 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:13 Linux-Ubuntu kernel: [   2265]  1000  2265     4028      987      306      681         0    77824        0             0 sleep
+Nov 15 15:43:13 Linux-Ubuntu kernel: [   2272]  1000  2272   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:13 Linux-Ubuntu kernel: [   2273]  1000  2273   244582   116803   116666      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:13 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2272,uid=1000
+Nov 15 15:43:13 Linux-Ubuntu kernel: Out of memory: Killed process 2272 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:14 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:14 Linux-Ubuntu kernel: CPU: 1 UID: 1000 PID: 2273 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:14 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:14 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:14 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:14 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:14 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:14 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:14 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:14 Linux-Ubuntu kernel: [   2273]  1000  2273   244582   184131   183994      130         7  1568768        0          1000 stress-ng-vm
+Nov 15 15:43:14 Linux-Ubuntu kernel: [   2274]  1000  2274   244582   166229   166092      130         7  1425408        0          1000 stress-ng-vm
+Nov 15 15:43:14 Linux-Ubuntu kernel: [   2275]  1000  2275     4028      902      278      624         0    69632        0             0 date
+Nov 15 15:43:14 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2273,uid=1000
+Nov 15 15:43:14 Linux-Ubuntu kernel: Out of memory: Killed process 2273 (stress-ng-vm) total-vm:978328kB, anon-rss:735976kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1532kB oom_score_adj:1000
+Nov 15 15:43:14 Linux-Ubuntu kernel: Out of memory: Killed process 2274 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:15 Linux-Ubuntu kernel: oom_kill_process: 1 callbacks suppressed
+Nov 15 15:43:15 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:15 Linux-Ubuntu kernel: CPU: 0 UID: 1000 PID: 2276 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:15 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:15 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:15 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:15 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:15 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:15 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:15 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:15 Linux-Ubuntu kernel: [   2276]  1000  2276   244582   198302   198165      130         7  1683456        0          1000 stress-ng-vm
+Nov 15 15:43:15 Linux-Ubuntu kernel: [   2278]  1000  2278     4028      975      306      669         0    81920        0             0 sleep
+Nov 15 15:43:15 Linux-Ubuntu kernel: [   2280]  1000  2280   244582   151988   151847      134         7  1310720        0          1000 stress-ng-vm
+Nov 15 15:43:15 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2276,uid=1000
+Nov 15 15:43:15 Linux-Ubuntu kernel: Out of memory: Killed process 2276 (stress-ng-vm) total-vm:978328kB, anon-rss:792660kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1644kB oom_score_adj:1000
+Nov 15 15:43:15 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:15 Linux-Ubuntu kernel: CPU: 1 UID: 1000 PID: 2280 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:15 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:15 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:15 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:15 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:15 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:15 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:15 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:15 Linux-Ubuntu kernel: [   2278]  1000  2278     4028      975      306      669         0    81920        0             0 sleep
+Nov 15 15:43:15 Linux-Ubuntu kernel: [   2280]  1000  2280   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:15 Linux-Ubuntu kernel: [   2281]  1000  2281   244582   116751   116614      130         7  1028096        0          1000 stress-ng-vm
+Nov 15 15:43:15 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2280,uid=1000
+Nov 15 15:43:15 Linux-Ubuntu kernel: Out of memory: Killed process 2280 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2282 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:16 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:16 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:16 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:16 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:16 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:16 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:16 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2278]  1000  2278     4028      975      306      669         0    81920        0             0 sleep
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2281]  1000  2281   244582   197635   197498      130         7  1675264        0          1000 stress-ng-vm
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2282]  1000  2282   244582   152707   152570      130         7  1318912        0          1000 stress-ng-vm
+Nov 15 15:43:16 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2281,uid=1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: Out of memory: Killed process 2281 (stress-ng-vm) total-vm:978328kB, anon-rss:789992kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1636kB oom_score_adj:1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: CPU: 0 UID: 1000 PID: 2283 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:16 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:16 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:16 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:16 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:16 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:16 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:16 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2278]  1000  2278     4028      975      306      669         0    81920        0             0 sleep
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2282]  1000  2282   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2283]  1000  2283   244582   116804   116667      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:16 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2282,uid=1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: Out of memory: Killed process 2282 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: CPU: 0 UID: 1000 PID: 2283 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:16 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:16 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:16 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:16 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:16 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:16 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:16 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2278]  1000  2278     4028      975      306      669         0    81920        0             0 sleep
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2283]  1000  2283   244582   195647   195510      130         7  1658880        0          1000 stress-ng-vm
+Nov 15 15:43:16 Linux-Ubuntu kernel: [   2284]  1000  2284   244582   154690   154553      130         7  1335296        0          1000 stress-ng-vm
+Nov 15 15:43:16 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2283,uid=1000
+Nov 15 15:43:16 Linux-Ubuntu kernel: Out of memory: Killed process 2283 (stress-ng-vm) total-vm:978328kB, anon-rss:782040kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1620kB oom_score_adj:1000
+Nov 15 15:43:17 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:17 Linux-Ubuntu kernel: CPU: 1 UID: 1000 PID: 2285 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:17 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:17 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:17 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:17 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:17 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:17 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:17 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:17 Linux-Ubuntu kernel: [   2278]  1000  2278     4028      975      306      669         0    81920        0             0 sleep
+Nov 15 15:43:17 Linux-Ubuntu kernel: [   2284]  1000  2284   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:17 Linux-Ubuntu kernel: [   2285]  1000  2285   244582   116800   116663      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:17 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2284,uid=1000
+Nov 15 15:43:17 Linux-Ubuntu kernel: Out of memory: Killed process 2284 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:17 Linux-Ubuntu kernel: workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 4 times, consider switching to WQ_UNBOUND
+Nov 15 15:43:17 Linux-Ubuntu kernel: systemd-journal invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=-250
+Nov 15 15:43:17 Linux-Ubuntu kernel: CPU: 0 UID: 0 PID: 470 Comm: systemd-journal Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:17 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:17 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:17 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:17 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:17 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:17 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:17 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:17 Linux-Ubuntu kernel: [   2285]  1000  2285   244582   182578   182441      130         7  1556480        0          1000 stress-ng-vm
+Nov 15 15:43:17 Linux-Ubuntu kernel: [   2286]  1000  2286   244582   167765   167628      130         7  1437696        0          1000 stress-ng-vm
+Nov 15 15:43:17 Linux-Ubuntu kernel: [   2287]  1000  2287     4025      856      278      578         0    81920        0             0 date
+Nov 15 15:43:17 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2285,uid=1000
+Nov 15 15:43:17 Linux-Ubuntu kernel: Out of memory: Killed process 2285 (stress-ng-vm) total-vm:978328kB, anon-rss:729764kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1520kB oom_score_adj:1000
+Nov 15 15:43:18 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:18 Linux-Ubuntu kernel: CPU: 1 UID: 1000 PID: 2289 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:18 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:18 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:18 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:18 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:18 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:18 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:18 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:18 Linux-Ubuntu kernel: [   2286]  1000  2286   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:18 Linux-Ubuntu kernel: [   2289]  1000  2289   244582   116785   116648      130         7  1028096        0          1000 stress-ng-vm
+Nov 15 15:43:18 Linux-Ubuntu kernel: [   2290]  1000  2290     4028      962      306      656         0    69632        0             0 sleep
+Nov 15 15:43:18 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2286,uid=1000
+Nov 15 15:43:18 Linux-Ubuntu kernel: Out of memory: Killed process 2286 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:18 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:18 Linux-Ubuntu kernel: CPU: 1 UID: 1000 PID: 2291 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:18 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:18 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:18 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:18 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:18 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:18 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:18 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:18 Linux-Ubuntu kernel: [   2289]  1000  2289   244582   194354   194217      130         7  1650688        0          1000 stress-ng-vm
+Nov 15 15:43:18 Linux-Ubuntu kernel: [   2290]  1000  2290     4028      962      306      656         0    69632        0             0 sleep
+Nov 15 15:43:18 Linux-Ubuntu kernel: [   2291]  1000  2291   244582   155919   155782      130         7  1343488        0          1000 stress-ng-vm
+Nov 15 15:43:18 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2289,uid=1000
+Nov 15 15:43:18 Linux-Ubuntu kernel: Out of memory: Killed process 2289 (stress-ng-vm) total-vm:978328kB, anon-rss:776868kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1612kB oom_score_adj:1000
+Nov 15 15:43:18 Linux-Ubuntu kernel: workqueue: blk_mq_run_work_fn hogged CPU for >10000us 67 times, consider switching to WQ_UNBOUND
+Nov 15 15:43:19 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:19 Linux-Ubuntu kernel: CPU: 1 UID: 1000 PID: 2292 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:19 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:19 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:19 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:19 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:19 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:19 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:19 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:19 Linux-Ubuntu kernel: [   2290]  1000  2290     4028      962      306      656         0    69632        0             0 sleep
+Nov 15 15:43:19 Linux-Ubuntu kernel: [   2291]  1000  2291   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:19 Linux-Ubuntu kernel: [   2292]  1000  2292   244582   116803   116666      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:19 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2291,uid=1000
+Nov 15 15:43:19 Linux-Ubuntu kernel: Out of memory: Killed process 2291 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:19 Linux-Ubuntu kernel: Out of memory: Killed process 2292 (stress-ng-vm) total-vm:978328kB, anon-rss:775220kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1608kB oom_score_adj:1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: oom_kill_process: 1 callbacks suppressed
+Nov 15 15:43:20 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: CPU: 0 UID: 1000 PID: 2293 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:20 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:20 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:20 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:20 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:20 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:20 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:20 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2290]  1000  2290     4028      962      306      656         0    69632        0             0 sleep
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2293]  1000  2293   244582   233537   233399      130         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2294]  1000  2294   244582   116810   116673      130         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:20 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2293,uid=1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: Out of memory: Killed process 2293 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:520kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: CPU: 0 UID: 1000 PID: 2294 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:20 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:20 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:20 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:20 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:20 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:20 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:20 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2290]  1000  2290     4028      962      306      656         0    69632        0             0 sleep
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2294]  1000  2294   244582   173381   173244      130         7  1482752        0          1000 stress-ng-vm
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2295]  1000  2295   244582   176975   176838      130         7  1511424        0          1000 stress-ng-vm
+Nov 15 15:43:20 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2295,uid=1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: Out of memory: Killed process 2295 (stress-ng-vm) total-vm:978328kB, anon-rss:707352kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1476kB oom_score_adj:1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140dca(GFP_HIGHUSER_MOVABLE|__GFP_ZERO|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: CPU: 3 UID: 1000 PID: 2294 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:20 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:20 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:20 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:20 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:20 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:20 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:20 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2290]  1000  2290     4028      962      306      656         0    69632        0             0 sleep
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2294]  1000  2294   244582   220703   220566      130         7  1859584        0          1000 stress-ng-vm
+Nov 15 15:43:20 Linux-Ubuntu kernel: [   2296]  1000  2296   244582   129666   129529      130         7  1134592        0          1000 stress-ng-vm
+Nov 15 15:43:20 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2294,uid=1000
+Nov 15 15:43:20 Linux-Ubuntu kernel: Out of memory: Killed process 2294 (stress-ng-vm) total-vm:978328kB, anon-rss:882264kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1816kB oom_score_adj:1000
+Nov 15 15:43:21 Linux-Ubuntu kernel: stress-ng-vm invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=1000
+Nov 15 15:43:21 Linux-Ubuntu kernel: CPU: 2 UID: 1000 PID: 2296 Comm: stress-ng-vm Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:43:21 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:43:21 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:43:21 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:43:21 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:43:21 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:43:21 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:43:21 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:43:21 Linux-Ubuntu kernel: [   2296]  1000  2296   244582   233538   233399      131         8  1961984        0          1000 stress-ng-vm
+Nov 15 15:43:21 Linux-Ubuntu kernel: [   2297]  1000  2297   244582   116814   116676      131         7  1032192        0          1000 stress-ng-vm
+Nov 15 15:43:21 Linux-Ubuntu kernel: [   2298]  1000  2298     4025      847      278      569         0    77824        0             0 date
+Nov 15 15:43:21 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2296,uid=1000
+Nov 15 15:43:21 Linux-Ubuntu kernel: Out of memory: Killed process 2296 (stress-ng-vm) total-vm:978328kB, anon-rss:933596kB, file-rss:524kB, shmem-rss:32kB, UID:1000 pgtables:1916kB oom_score_adj:1000
+Nov 15 15:48:45 Linux-Ubuntu kernel: systemd-journal invoked oom-killer: gfp_mask=0x140cca(GFP_HIGHUSER_MOVABLE|__GFP_COMP), order=0, oom_score_adj=-250
+Nov 15 15:48:45 Linux-Ubuntu kernel: CPU: 4 UID: 0 PID: 470 Comm: systemd-journal Tainted: G             L      7.0.0-38-generic #38-Ubuntu PREEMPT(lazy) 
+Nov 15 15:48:45 Linux-Ubuntu kernel: Tainted: [L]=SOFTLOCKUP
+Nov 15 15:48:45 Linux-Ubuntu kernel: Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Nov 15 15:48:45 Linux-Ubuntu kernel: Call Trace:
+Nov 15 15:48:45 Linux-Ubuntu kernel:  <TASK>
+Nov 15 15:48:45 Linux-Ubuntu kernel:  show_stack+0x49/0x60
+Nov 15 15:48:45 Linux-Ubuntu kernel:  dump_stack_lvl+0x5f/0x90
+Nov 15 15:48:45 Linux-Ubuntu kernel:  dump_stack+0x10/0x18
+--
+Nov 15 15:48:45 Linux-Ubuntu kernel: [   2297]  1000  2297   244582   192926   192789      130         7  1638400        0          1000 stress-ng-vm
+Nov 15 15:48:45 Linux-Ubuntu kernel: [   2299]  1000  2299   244582   157417   157280      130         7  1355776        0          1000 stress-ng-vm
+Nov 15 15:48:45 Linux-Ubuntu kernel: [   2301]  1000  2301     4028      968      306      662         0    77824        0             0 sleep
+Nov 15 15:48:45 Linux-Ubuntu kernel: oom-kill:constraint=CONSTRAINT_NONE,nodemask=(null),cpuset=/,mems_allowed=0,global_oom,task_memcg=/user.slice/user-1000.slice/session-3.scope,task=stress-ng-vm,pid=2297,uid=1000
+Nov 15 15:48:45 Linux-Ubuntu kernel: Out of memory: Killed process 2297 (stress-ng-vm) total-vm:978328kB, anon-rss:771156kB, file-rss:520kB, shmem-rss:28kB, UID:1000 pgtables:1600kB oom_score_adj:1000
+Nov 15 15:48:45 Linux-Ubuntu kernel: oom_reaper: reaped process 2297 (stress-ng-vm), now anon-rss:0kB, file-rss:0kB, shmem-rss:0kB
+Nov 15 15:48:45 Linux-Ubuntu systemd[1]: snapd.service: Watchdog timeout (limit 5min)!
+Nov 15 15:48:45 Linux-Ubuntu systemd[1]: snapd.service: Killing process 1151 (snapd) with signal SIGABRT.
+Nov 15 15:48:45 Linux-Ubuntu systemd[1]: Starting systemd-tmpfiles-clean.service - Cleanup of Temporary Directories...
+Nov 15 15:48:45 Linux-Ubuntu systemd[1]: systemd-tmpfiles-clean.service: Deactivated successfully.
+Nov 15 15:48:45 Linux-Ubuntu systemd[1]: Finished systemd-tmpfiles-clean.service - Cleanup of Temporary Directories.
+Nov 15 15:48:45 Linux-Ubuntu systemd[1]: snapd.service: Main process exited, code=exited, status=2/INVALIDARGUMENT
+Nov 15 15:48:45 Linux-Ubuntu systemd[1]: snapd.service: Failed with result 'watchdog'.
