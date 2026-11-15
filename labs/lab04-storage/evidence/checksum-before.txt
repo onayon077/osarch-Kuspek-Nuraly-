@@ -1,0 +1,3 @@
+$ cd /mnt/mirror && sha256sum proof.txt random.bin
+d9707571ec75bb83ca34b4ebd1ff0e5b6486fc25d401ffc55adb96da4348923f  proof.txt
+48c57f9ef08021b79b99250f4de866ad1cd7d1fe4b363ccf12106f684b6174e6  random.bin

@@ -1,0 +1,17 @@
+
+
+Number         : 1
+PartitionStyle : GPT
+Size           : 1073741824
+
+
+
+
+
+DriveLetter     : E
+FileSystemLabel : LAB04
+FileSystem      : NTFS
+Size            : 1056894976
+
+
+
