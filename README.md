@@ -3,32 +3,32 @@
 **Student:** Nuraly Kuspek  
 **Course:** IFT 103 — Operating System Architecture  
 **Environment:** Windows 11, Ubuntu Server, Oracle VirtualBox  
-**Repository purpose:** Laboratory reports, technical evidence, and support tickets.
+**Repository:** [osarch-Kuspek-Nuraly-](https://github.com/onayon077/osarch-Kuspek-Nuraly-)
 
-## Repository navigation
+This repository contains laboratory reports, supporting evidence, and technical documentation for the Operating System Architecture course.
 
-This is the main index for the course repository. Select a report to view its explanation, results, and evidence. Links below are **relative to the repository root** and work on GitHub when the corresponding files have been committed and pushed.
+## Laboratory work
 
-### Laboratory work
+| Lab | Topic | Open |
+| --- | --- | --- |
+| **Lab 01** | First virtual machine | [Find Lab 01 in the labs folder](labs/) |
+| **Lab 02** | Windows guest, networking, and overcommitment | [Find Lab 02 in the labs folder](labs/) |
+| **Lab 03** | Hardware teardown and system information | [README](labs/lab03-teardown/README.md) · [Evidence](labs/lab03-teardown/evidence/) |
+| **Lab 04** | Partitioning, RAID 1, failure, and recovery | [README](labs/lab04-storage/README.md) · [Evidence](labs/lab04-storage/evidence/) |
+| **Lab 05** | Encoding forensics and CSV repair | [README](labs/lab05-encoding/README.md) · [Evidence](labs/lab05-encoding/evidence/) |
+| **Lab 06** | Live processes and memory pressure | [README](labs/lab06-processes/README.md) · [Evidence](labs/lab06-processes/evidence/) |
 
-| Lab | Topic | Report | Evidence folder |
-| --- | --- | --- | --- |
-| Lab 01 | First virtual machine | [Open Lab 01](labs/lab01/README.md) | [Files](labs/lab01/evidence/) |
-| Lab 02 | Windows guest, networking, and overcommitment | [Open Lab 02](labs/lab02/README.md) | [Files](labs/lab02/evidence/) |
-| Lab 03 | Hardware teardown and system information | [Open Lab 03](labs/lab03-teardown/README.md) | [Files](labs/lab03-teardown/evidence/) |
-| Lab 04 | Partitioning, RAID 1, failure, and recovery | [Open Lab 04](labs/lab04-storage/README.md) | [Files](labs/lab04-storage/evidence/) |
-| Lab 05 | Encoding forensics and CSV repair | [Open Lab 05](labs/lab05-encoding/README.md) | [Files](labs/lab05-encoding/evidence/) |
-| Lab 06 | Live processes and memory pressure | [Open Lab 06](labs/lab06-processes/README.md) | [Files](labs/lab06-processes/evidence/) |
+> **Navigation note:** Lab 01 and Lab 02 are linked to the existing `labs/` directory rather than to unverified `lab01/` and `lab02/` paths. Open `labs/`, select the corresponding lab folder, and open its `README.md`. This avoids the broken paths from the previous index.
 
-### Support tickets
+## Support ticket
 
-| Ticket | Topic | Documentation | Evidence |
-| --- | --- | --- | --- |
-| Ticket 01 | Reproducible virtual-machine test environment | [Report](tickets/ticket1-vm-build-doc/README.md) · [Build guide](tickets/ticket1-vm-build-doc/BUILD.md) | [Files](tickets/ticket1-vm-build-doc/evidence/) |
+| Ticket | Topic | Documentation |
+| --- | --- | --- |
+| **Ticket 01** | Reproducible virtual-machine test environment | [README](tickets/ticket1-vm-build-doc/README.md) · [BUILD.md](tickets/ticket1-vm-build-doc/BUILD.md) · [Evidence](tickets/ticket1-vm-build-doc/evidence/) |
+
+You can also [browse all tickets](tickets/).
 
 ## Selected evidence
-
-These direct links provide quick access to important files. The detailed evidence tables remain in each lab's own `README.md`.
 
 ### Lab 04 — Storage and RAID
 
@@ -53,13 +53,13 @@ These direct links provide quick access to important files. The detailed evidenc
 
 ## How to use this repository
 
-1. Open a laboratory or ticket from the tables above.
-2. Read its `README.md` for the procedure, observations, results, and limitations.
-3. Open the linked `evidence/` files for the actual screenshots, command output, and data.
-4. For Ticket 01, use `BUILD.md` for the step-by-step virtual-machine setup guide.
+1. Choose a laboratory or ticket from the tables above.
+2. Read the corresponding `README.md` for the steps, results, and explanations.
+3. Open its `evidence/` folder to inspect screenshots and command outputs.
+4. For Ticket 01, follow `BUILD.md` for the virtual-machine setup instructions.
 
-**Note about links:** GitHub can only open a link if its target has been pushed to the repository with the **exact same path and filename**, including capitalization. If Lab 01 or Lab 02 has a longer local folder name, update those two table rows to match. This index does not replace the individual lab reports.
+**Important:** Relative links depend on the exact file paths and names in GitHub. The Lab 01 and Lab 02 folder names have not been independently verified; their links therefore lead to the parent `labs/` directory instead of pretending to point to a specific report.
 
 ## AI assistance disclosure
 
-ChatGPT was used to help organize Markdown documentation, navigation, and some explanatory text. Lab commands, screenshots, and outputs should be checked against the actual environment; assistance with documentation does not constitute independent verification of technical evidence.
+ChatGPT was used to help organize Markdown documentation, navigation, and explanatory text. Commands, screenshots, and results should be checked against the actual environment.
