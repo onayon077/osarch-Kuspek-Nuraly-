@@ -11,14 +11,12 @@ This repository contains laboratory reports, supporting evidence, and technical 
 
 | Lab | Topic | Open |
 | --- | --- | --- |
-| **Lab 01** | First virtual machine | [Find Lab 01 in the labs folder](labs/) |
-| **Lab 02** | Windows guest, networking, and overcommitment | [Find Lab 02 in the labs folder](labs/) |
+| **Lab 01** | First virtual machine | [Open Lab 01](labs/lab01-first-vm/) |
+| **Lab 02** | Windows guest, networking, and overcommitment | [Open Lab 02](labs/lab02-windows-vm/) |
 | **Lab 03** | Hardware teardown and system information | [README](labs/lab03-teardown/README.md) · [Evidence](labs/lab03-teardown/evidence/) |
 | **Lab 04** | Partitioning, RAID 1, failure, and recovery | [README](labs/lab04-storage/README.md) · [Evidence](labs/lab04-storage/evidence/) |
 | **Lab 05** | Encoding forensics and CSV repair | [README](labs/lab05-encoding/README.md) · [Evidence](labs/lab05-encoding/evidence/) |
 | **Lab 06** | Live processes and memory pressure | [README](labs/lab06-processes/README.md) · [Evidence](labs/lab06-processes/evidence/) |
-
-> **Navigation note:** Lab 01 and Lab 02 are linked to the existing `labs/` directory rather than to unverified `lab01/` and `lab02/` paths. Open `labs/`, select the corresponding lab folder, and open its `README.md`. This avoids the broken paths from the previous index.
 
 ## Support ticket
 
@@ -58,7 +56,7 @@ You can also [browse all tickets](tickets/).
 3. Open its `evidence/` folder to inspect screenshots and command outputs.
 4. For Ticket 01, follow `BUILD.md` for the virtual-machine setup instructions.
 
-**Important:** Relative links depend on the exact file paths and names in GitHub. The Lab 01 and Lab 02 folder names have not been independently verified; their links therefore lead to the parent `labs/` directory instead of pretending to point to a specific report.
+**Note:** GitHub links are case-sensitive and require the linked files to exist. Lab 01 and Lab 02 folder paths use the exact URLs provided for this repository.
 
 ## AI assistance disclosure
 
