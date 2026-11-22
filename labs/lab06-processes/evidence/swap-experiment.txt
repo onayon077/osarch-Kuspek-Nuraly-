@@ -1,0 +1,396 @@
+=== SWAP BEFORE Sun Nov 22 04:46:54 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       384Mi       790Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+NAME            TYPE SIZE USED PRIO
+/swapfile-lab06 file   2G   0B   -1
+=== Sun Nov 22 04:46:59 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       385Mi       789Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:01 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:04 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:06 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:08 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:10 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:12 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:17 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:21 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:24 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       386Mi       788Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:26 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       407Mi       767Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:28 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       405Mi       769Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:30 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       402Mi       772Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:32 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       400Mi       774Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:35 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       398Mi       776Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:37 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       395Mi       779Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:40 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       392Mi       782Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:42 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       392Mi       782Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:45 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       392Mi       782Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:47 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:49 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:51 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       390Mi       784Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:53 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       390Mi       784Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:55 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       390Mi       784Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:47:58 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       389Mi       785Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:00 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       389Mi       785Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:02 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       389Mi       785Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:05 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       389Mi       785Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:07 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       389Mi       785Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:09 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       389Mi       785Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:11 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:14 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:16 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:18 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:20 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:23 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:25 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:27 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       392Mi       782Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:30 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       392Mi       782Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:32 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       392Mi       782Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:35 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       392Mi       782Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:37 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       392Mi       782Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:39 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:42 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:44 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       391Mi       783Mi       1.1Mi       612Mi       1.2Gi
+Swap:          2.0Gi          0B       2.0Gi
+=== Sun Nov 22 04:48:55 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.2Gi        98Mi       1.3Mi       483Mi       435Mi
+Swap:          2.0Gi        16Ki       2.0Gi
+=== Sun Nov 22 04:48:58 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        65Mi       1.3Mi       214Mi       134Mi
+Swap:          2.0Gi       3.7Mi       2.0Gi
+=== Sun Nov 22 04:49:01 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        60Mi       1.2Mi       200Mi       106Mi
+Swap:          2.0Gi        52Mi       1.9Gi
+=== Sun Nov 22 04:49:04 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        60Mi       1.2Mi       187Mi        93Mi
+Swap:          2.0Gi        84Mi       1.9Gi
+=== Sun Nov 22 04:49:09 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        61Mi       1.2Mi       184Mi        90Mi
+Swap:          2.0Gi       132Mi       1.9Gi
+=== Sun Nov 22 04:49:12 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        61Mi       1.2Mi       159Mi        65Mi
+Swap:          2.0Gi       184Mi       1.8Gi
+=== Sun Nov 22 04:49:14 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        61Mi       1.2Mi       159Mi        65Mi
+Swap:          2.0Gi       200Mi       1.8Gi
+=== Sun Nov 22 04:49:16 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        85Mi       1.2Mi       159Mi        89Mi
+Swap:          2.0Gi       235Mi       1.8Gi
+=== Sun Nov 22 04:49:19 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        71Mi       1.2Mi       155Mi        72Mi
+Swap:          2.0Gi       241Mi       1.8Gi
+=== Sun Nov 22 04:49:21 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        74Mi       1.2Mi       155Mi        84Mi
+Swap:          2.0Gi       250Mi       1.8Gi
+=== Sun Nov 22 04:49:23 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        66Mi       1.2Mi       155Mi        76Mi
+Swap:          2.0Gi       250Mi       1.8Gi
+=== Sun Nov 22 04:49:25 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        62Mi       1.2Mi       155Mi        72Mi
+Swap:          2.0Gi       259Mi       1.7Gi
+=== Sun Nov 22 04:49:27 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        77Mi       1.2Mi       153Mi        85Mi
+Swap:          2.0Gi       276Mi       1.7Gi
+=== Sun Nov 22 04:49:29 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        67Mi       1.2Mi       153Mi        75Mi
+Swap:          2.0Gi       281Mi       1.7Gi
+=== Sun Nov 22 04:49:31 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        60Mi       1.2Mi       166Mi        78Mi
+Swap:          2.0Gi       304Mi       1.7Gi
+=== Sun Nov 22 04:49:33 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       1.5Gi        57Mi       1.2Mi       166Mi        74Mi
+Swap:          2.0Gi       319Mi       1.7Gi
+=== Sun Nov 22 04:49:36 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       372Mi       1.2Gi       1.1Mi       170Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:39 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       372Mi       1.2Gi       1.1Mi       171Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:41 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       371Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:43 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       371Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:45 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       372Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:47 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       373Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:49 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:51 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:53 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:56 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:49:58 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:00 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       177Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:02 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:04 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:06 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       376Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:09 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       376Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:11 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       376Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:13 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       376Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:15 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       376Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:17 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:20 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:22 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:25 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:27 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:29 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:31 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:33 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:36 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       181Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:38 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       377Mi       1.2Gi       1.1Mi       182Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:41 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       373Mi       1.2Gi       1.1Mi       204Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:43 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       373Mi       1.2Gi       1.1Mi       204Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:45 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       373Mi       1.2Gi       1.1Mi       204Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:47 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       373Mi       1.2Gi       1.1Mi       204Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:49 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       374Mi       1.2Gi       1.1Mi       204Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== Sun Nov 22 04:50:51 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       375Mi       1.2Gi       1.1Mi       205Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+=== SWAP AFTER Sun Nov 22 04:51:03 PM UTC 2026 ===
+               total        used        free      shared  buff/cache   available
+Mem:           1.6Gi       375Mi       1.2Gi       1.1Mi       205Mi       1.2Gi
+Swap:          2.0Gi        10Mi       2.0Gi
+NAME            TYPE SIZE  USED PRIO
+/swapfile-lab06 file   2G 10.3M   -1
