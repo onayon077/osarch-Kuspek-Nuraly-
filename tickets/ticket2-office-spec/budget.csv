@@ -1,0 +1,51 @@
+role,component,model,price_kzt,source,date
+accountant,CPU,"AMD Ryzen 5 5600GT, AM4, OEM",95990,https://shop.kz/offer/protsessor-amd-ryzen-5-5600gt-am4-oem/,2026-11-24
+accountant,Motherboard,"MSI A520M-A PRO, Micro-ATX",30590,https://shop.kz/offer/materinskaya-plata-msi-a520m-a-pro-am4/,2026-11-24
+accountant,RAM,"Hiksemi Sword DDR4-3200, 16 GB (2x8 GB)",66990,https://shop.kz/offer/ddr-4-udimm-16-gb-3200-mhz-hiksemi-sword-rgb-2x-8-gb-kit-box-hsc416u32b5/,2026-11-24
+accountant,SSD,"Kingston NV3 NVMe M.2 2280, 1 TB",85990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/,2026-11-24
+accountant,CPU cooler,"DeepCool AG200, AM4-compatible",5990,https://shop.kz/offer/kuler-deepcool-ag200/,2026-11-24
+accountant,Power supply,"DeepCool PF500D-HA, 500 W",20990,https://shop.kz/offer/blok-pitaniya-atx-500-w-deepcool-pf500d-ha/,2026-11-24
+accountant,Case,1Stplayer DK-3-BK,19600,https://shop.kz/offer/korpus-1stplayer-dk-3-bk-black/,2026-11-24
+accountant,Monitor,"Acer KA242YEbi, 23.8-inch IPS FHD",58990,https://shop.kz/offer/monitor-23-8-acer-ka242yebi-black/,2026-11-24
+accountant,Operating system,"Microsoft Windows 11 Home, licensed electronic key",94990,https://shop.kz/offer/microsoft-windows-11-home-64-bit-elektronnyy-klyuch/,2026-11-24
+accountant,Keyboard + mouse,Defender Berkeley C-925 set,11690,https://shop.kz/offer/klaviatura-defender-berkeley-c-925-black-usb-mysh/,2026-11-24
+accountant,TOTAL,Total for accountant,491810,,
+sales,CPU,"AMD Ryzen 5 5600GT, AM4, OEM",95990,https://shop.kz/offer/protsessor-amd-ryzen-5-5600gt-am4-oem/,2026-11-24
+sales,Motherboard,"MSI A520M-A PRO, Micro-ATX",30590,https://shop.kz/offer/materinskaya-plata-msi-a520m-a-pro-am4/,2026-11-24
+sales,RAM,"Hiksemi Sword DDR4-3200, 32 GB (2x16 GB)",139990,https://shop.kz/offer/ddr-4-udimm-32-gb-3200-mhz-hiksemi-sword-rgb-2x-16-gb-kit-box-hsc432u32b5/,2026-11-24
+sales,SSD,"Kingston NV3 NVMe M.2 2280, 1 TB",85990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/,2026-11-24
+sales,CPU cooler,"DeepCool AG200, AM4-compatible",5990,https://shop.kz/offer/kuler-deepcool-ag200/,2026-11-24
+sales,Power supply,"DeepCool PF500D-HA, 500 W",20990,https://shop.kz/offer/blok-pitaniya-atx-500-w-deepcool-pf500d-ha/,2026-11-24
+sales,Case,1Stplayer DK-3-BK,19600,https://shop.kz/offer/korpus-1stplayer-dk-3-bk-black/,2026-11-24
+sales,Monitor,"Acer KA242YEbi, 23.8-inch IPS FHD",58990,https://shop.kz/offer/monitor-23-8-acer-ka242yebi-black/,2026-11-24
+sales,Operating system,"Microsoft Windows 11 Home, licensed electronic key",94990,https://shop.kz/offer/microsoft-windows-11-home-64-bit-elektronnyy-klyuch/,2026-11-24
+sales,Keyboard + mouse,Defender Berkeley C-925 set,11690,https://shop.kz/offer/klaviatura-defender-berkeley-c-925-black-usb-mysh/,2026-11-24
+sales,Webcam,"A4Tech PK-910H, 1080p",11990,https://shop.kz/offer/web-kamera-a4tech-pk-910h/,2026-11-24
+sales,Headset,"Defender Gryphon 750U, USB",6590,https://shop.kz/offer/garnitura-defender-gryphon-750u-black/,2026-11-24
+sales,TOTAL,Total for sales,583390,,
+developer,CPU,"AMD Ryzen 7 5700G, AM4, OEM",115590,https://shop.kz/offer/protsessor-amd-ryzen-7-5700g-am4-oem/,2026-11-24
+developer,Motherboard,"MSI B550M PRO-VDH WiFi, Micro-ATX",57990,https://shop.kz/offer/materinskaya-plata-msi-b550m-pro-vdh-wi-fi-am4/,2026-11-24
+developer,RAM,"Hiksemi Sword DDR4-3200, 32 GB (2x16 GB)",139990,https://shop.kz/offer/ddr-4-udimm-32-gb-3200-mhz-hiksemi-sword-rgb-2x-16-gb-kit-box-hsc432u32b5/,2026-11-24
+developer,SSD,"Kingston NV3 NVMe M.2 2280, 1 TB",85990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/,2026-11-24
+developer,CPU cooler,"DeepCool AG200, AM4-compatible",5990,https://shop.kz/offer/kuler-deepcool-ag200/,2026-11-24
+developer,Power supply,"DeepCool PF500D-HA, 500 W",20990,https://shop.kz/offer/blok-pitaniya-atx-500-w-deepcool-pf500d-ha/,2026-11-24
+developer,Case,1Stplayer DK-3-BK,19600,https://shop.kz/offer/korpus-1stplayer-dk-3-bk-black/,2026-11-24
+developer,Monitor,"AOC Q27B3CF2/01, 27-inch IPS QHD (100 Hz)",114990,https://shop.kz/offer/monitor-27-aoc-q27b3cf2-01-black/,2026-11-24
+developer,Operating system,"Microsoft Windows 11 Home, licensed electronic key",94990,https://shop.kz/offer/microsoft-windows-11-home-64-bit-elektronnyy-klyuch/,2026-11-24
+developer,Keyboard + mouse,Defender Berkeley C-925 set,11690,https://shop.kz/offer/klaviatura-defender-berkeley-c-925-black-usb-mysh/,2026-11-24
+developer,TOTAL,Total for developer,667810,,
+designer,CPU,"AMD Ryzen 5 5600, AM4, OEM",63590,https://shop.kz/offer/protsessor-amd-ryzen-5-5600-am4-oem/,2026-11-24
+designer,Motherboard,"MSI B550M PRO-VDH WiFi, Micro-ATX",57990,https://shop.kz/offer/materinskaya-plata-msi-b550m-pro-vdh-wi-fi-am4/,2026-11-24
+designer,RAM,"Hiksemi Sword DDR4-3200, 32 GB (2x16 GB)",139990,https://shop.kz/offer/ddr-4-udimm-32-gb-3200-mhz-hiksemi-sword-rgb-2x-16-gb-kit-box-hsc432u32b5/,2026-11-24
+designer,SSD,"Kingston NV3 NVMe M.2 2280, 1 TB",85990,https://shop.kz/offer/ssd-nakopitel-1-tb-kingston-nv3-m-2-pcie-4-0/,2026-11-24
+designer,CPU cooler,"DeepCool AG200, AM4-compatible",5990,https://shop.kz/offer/kuler-deepcool-ag200/,2026-11-24
+designer,Power supply,"DeepCool GamerStorm PF650D V2, 650 W",27690,https://shop.kz/offer/blok-pitaniya-atx-650-w-deepcool-gamerstorm-pf650d-v2/,2026-11-24
+designer,Case,1Stplayer DK-3-BK,19600,https://shop.kz/offer/korpus-1stplayer-dk-3-bk-black/,2026-11-24
+designer,Graphics card,"Gigabyte GeForce RTX 5060 Gaming OC V2, 8 GB",334990,https://shop.kz/offer/videokarta-gigabyte-rtx-5060-gaming-oc-v2-8-gb-geforse-rtx-5060/,2026-11-24
+designer,Monitor,"AOC Q27B3CF2/01, 27-inch IPS QHD (100 Hz)",114990,https://shop.kz/offer/monitor-27-aoc-q27b3cf2-01-black/,2026-11-24
+designer,Operating system,"Microsoft Windows 11 Home, licensed electronic key",94990,https://shop.kz/offer/microsoft-windows-11-home-64-bit-elektronnyy-klyuch/,2026-11-24
+designer,Keyboard + mouse,Defender Berkeley C-925 set,11690,https://shop.kz/offer/klaviatura-defender-berkeley-c-925-black-usb-mysh/,2026-11-24
+designer,TOTAL,Total for designer,957500,,
+all,GRAND TOTAL,Four computers incl. monitors and operating systems,2700510,,
+all,BUDGET LIMIT,Maximum available budget,3000000,,
+all,BUDGET REMAINING,Budget minus grand total,299490,,
